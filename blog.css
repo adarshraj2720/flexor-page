@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big,  code,
+del, dfn, em, img, ins, kbd,  s, samp,
+small, strike, strong, sub,  tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+ form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* blockquote, q {
+    quotes: none;
+} */
+/* blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+} */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ******************************************MAIN-CODE******************************************************** */
+body{
+    font-family: raleway;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padding{
+    padding: 20px 50px;
+}
+.padding-1{
+    padding: 50px 50px 0px 50px;
+}
+.flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* --------header------- */
+h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: silver;
+}
+li a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    color: silver;
+}
+li a:hover{
+    color: tomato;
+}
+.home{
+    color: tomato;
+}
+select{
+    border: 0;
+}
+option{
+    background-color: white;
+    color: silver;
+}
+/* ------------------------blog-head */
+.blog-section{
+    padding-bottom: 50px;
+}
+.blog-head{
+    background-color: silver;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h2{
+    padding-top: 10px;
+    font-size: 24px;
+}
+/* --------------------- */
+
+.blog-col{
+    width: 27%;
+}
+.blog-img{
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+.img-details{
+   margin: 0;
+    padding: 20px;
+    text-align: left;
+    background-color: #FFFFFF;
+    box-shadow:  0px 4px 5px 0px #C6BCAB;
+}
+.user{
+    padding-top: 20px;
+}
+.clock-img{
+    font-size: 15px;
+    color: silver;
+    margin-right: 10px;
+}
+h3{
+    font-size: 20px;
+    font-weight:700;
+}
+.about-h3{
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 20px 0px;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+.read-more-btn{
+    border: 0;
+    padding: 10px 20px;
+    background-color: coral;
+    color: white;
+}
+/* --------------------- */
+.next-page-section{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.next-page{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border: 1px solid silver;
+    color: black;
+    margin-left: 10px;
+}
+.next-page-btn{
+    color: silver;
+    text-align: center;
+}
+.forward-page-btn{
+    border: 0;
+    color: silver;
+}
+.second-page{
+    background-color: tomato;
+    border: 0;
+    padding: 11px;
+}
+
+
+/* ------------------------------ */
+
+
+/* ------------------- */
+.last-block{
+    background-color: papayawhip;
+}
+.width-20{
+    width: 50%;
+}
+.flex-2{
+    display: flex;
+    align-items: center;
+}
+.greater-img{
+    color: tomato;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.flexor{
+    font-size: 26px;
+    padding-bottom: 30px;
+}
+address{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.phone{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.useful-links{
+    font-weight: 700;
+    
+}
+.useful-link-list{
+    padding-top: 20px;
+}
+.link-padding{
+    padding-top: 20px;
+}
+.link{
+    
+    font-size: 14px;
+}
+.subscribe{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.about-subscribe{
+    padding: 30px 0px;
+}
+.a{
+	
+	height:40px;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 10px;
+   border-radius: 20px;
+}
+.b{
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+	height: 40px;
+	width:40%;
+	background-color:#EA513E;
+   border-radius: 20px;
+}
+
+/* ------------ */
+footer{
+
+
+}
+.flexor-1{
+    font-weight: 800;
+}
+.designed{
+    padding-top: 10px;
+}
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color:tomato ;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    color: white;
+}
+.top-icon{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.social-img{
+    margin-left: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: tomato;
+    color: #FFFFFF;
+    padding: 10px;
+    
+}
