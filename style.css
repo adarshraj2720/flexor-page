@@ -329,7 +329,7 @@ h6{
     line-height: 1.5;
     /* padding-bottom: 20px; */
 }
-.service-img:hover{
+.services-col:hover .service-img{
     background-color: #FFFFFF;
     color: tomato;
     border: 2px solid tomato;
@@ -340,7 +340,7 @@ h6{
     width: 48%;
     position: relative;
 }
-.four-img-head-block:hover{
+.four-img-block:hover .four-img-head-block{
     background-color: tomato;
     color: #FFFFFF;
 }
@@ -762,21 +762,21 @@ address{
     flex-direction: row-reverse;
 }
 .a{
-	
-	height:40px;
-	width: 100%;
-	background-color: white;
-	margin-bottom: 10px;
+    
+    height:40px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
    border-radius: 20px;
 }
 .b{
-	padding-left: 20px;
-	display: flex;
-	align-items: center;
-	color: #FFFFFF;
-	height: 40px;
-	width:40%;
-	background-color:#EA513E;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    height: 40px;
+    width:40%;
+    background-color:#EA513E;
    border-radius: 20px;
 }
 
@@ -851,13 +851,17 @@ footer{
     
     }
     nav ul li {
-        padding: 5px 0px;
+        padding: 10px 0px;
         
+    }
+    li a{
+        color: white;
+        font-size: 20px;
     }
     .drop-down-hover{
         position: absolute;
-        top:340px;
-       right: 330px;
+        top:440px;
+       right: 310px;
        margin-top: 20px;
     }
 
