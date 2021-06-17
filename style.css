@@ -169,7 +169,8 @@ h2{
 
 .after-welcome-block{
     position: relative;
-    bottom: 110px;  
+bottom: 100px;
+ align-items: inherit;
 }
 .col_1{
     width: 24%;
@@ -203,10 +204,11 @@ h3{
     background-color: #FFFFFF; 
 }
 .col_2{
-    padding: 25px 20px;
+    margin-top: 25px;
+    padding: 25px  20px 10px 20px;
     border-radius: 10px;
     width: 16%;
-    height: 280px;
+    height:300px;
     flex-wrap: wrap;
     box-shadow:  0px 4px 5px 0px #C6BCAB;
     margin-right: 40px;
@@ -264,9 +266,10 @@ iframe{
     margin-right: 20px;
     font-size: 35px;
 }
-.about-img:hover{
-    background-color: white;
-    color: tomato;
+.fingerprint-block:hover .about-img{
+    background-color: tomato;
+    color: white;
+    border: 0;
 }
 .fingerprint-head{
     padding-bottom: 20px;
