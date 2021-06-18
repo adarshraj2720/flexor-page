@@ -145,7 +145,7 @@ option{
     background: url(./images/blog_p3.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;  
 }
 .welcome-head{
@@ -163,6 +163,31 @@ h2{
     font-size: 1.5rem;
     padding-top: 20px;
     padding-bottom: 50px;
+}
+.arrow-circle{
+width: 20%;
+height: 34px;
+background-color: silver;
+border-radius: 12px;
+display: flex;
+align-items: center;
+
+}
+.h-btn{
+    position: relative;
+bottom:  0px;
+right: 10px;
+    height:50px;
+  width: 30%;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+.start-btn{
+    color: #FFFFFF;
 }
 
 /* -------after-welcome-block-------- */
@@ -280,7 +305,21 @@ iframe{
     color: tan;
     line-height: 1.5;
 }
+/* --------brand----------------- */
+.brand-col{
 
+    width: 100%;
+    height: 300px;
+    overflow-x:scroll;
+
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.brand-img{
+    width: 100%;
+    height: 100%;
+}
 /* ---------services----------- */
 .services{
    background-color: papayawhip;
@@ -384,16 +423,26 @@ h6{
 }
 
 /* ------------quote----------- */
+
 .quote{
+    padding: 50px 0px;
     background: url(./images/office.jpg) no-repeat ;
     background-size: cover;
+    width:100%;
+    height:300px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+}
+.quote-over{
     width: 100%;
-    height: 430px;
+    height: 100%;
     display: flex;
-    justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .adarsh-img{
     height: 80px;
@@ -464,20 +513,20 @@ blockquote{
 }
 .portfolio-item-col:hover .cart-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .cart-list{ 
-    padding: 20px;
+    padding: 10px;
   position: absolute;
   bottom: 50px;
   left:30px;
-    width: 70%;
-    height:75px;
+    width: 80%;
+    height:50px;
     background-color: #FFFFFF;
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
    
 }
@@ -498,13 +547,12 @@ blockquote{
 
 /* -----------team----------- */
 .team-social-site{
-    padding: 20px;
+    padding: 20px 0px;
   position: absolute;
   bottom: 100px;
-  left: 5px;
-    width: 85%;
+    width: 100%;
     height:25px;
-    background-color: #FFFFFF;
+    background-color: rgba(255,255,255,0.8);
     color: black;
     display: flex;
     justify-content: space-around;
