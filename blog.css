@@ -57,10 +57,10 @@ body{
 }
 
 .padding{
-    padding: 20px 50px;
+    padding: 20px 80px;
 }
 .padding-1{
-    padding: 50px 50px 0px 50px;
+    padding: 50px 80px 0px 80px;
 }
 .flex-1{
     display: flex;
@@ -111,6 +111,7 @@ h2{
 
 .blog-col{
     width: 27%;
+   
 }
 .blog-img{
     width: 100%;
@@ -122,19 +123,23 @@ h2{
     padding: 20px;
     text-align: left;
     background-color: #FFFFFF;
-    box-shadow:  0px 4px 5px 0px #C6BCAB;
+    box-shadow:   0px 0px 12px 1px rgb(0 0 0 / 40%);
 }
 .user{
+
     padding-top: 20px;
 }
 .clock-img{
     font-size: 15px;
     color: silver;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 h3{
     font-size: 20px;
     font-weight:700;
+}
+h3:hover{
+    color: tomato;
 }
 .about-h3{
     font-size: 14px;
@@ -152,6 +157,13 @@ h3{
     background-color: coral;
     color: white;
 }
+h3,.read-more-btn,.next-page{
+    cursor: pointer;
+}
+.read-more-btn:hover{
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
+}
 /* --------------------- */
 .next-page-section{
     display: flex;
@@ -167,6 +179,11 @@ h3{
     color: black;
     margin-left: 10px;
 }
+.next-page:hover{
+    background-color: tomato;
+    border: 0;
+    padding: 11px;
+}
 .next-page-btn{
     color: silver;
     text-align: center;
@@ -174,6 +191,10 @@ h3{
 .forward-page-btn{
     border: 0;
     color: silver;
+}
+.forward-page-btn:hover{
+   padding: 10px;
+   background-color: white;
 }
 .second-page{
     background-color: tomato;
@@ -236,23 +257,38 @@ address{
 .about-subscribe{
     padding: 30px 0px;
 }
-.a{
-	
-	height:40px;
-	width: 100%;
-	background-color: white;
-	margin-bottom: 10px;
-   border-radius: 20px;
+.subscribe{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+   border: 1px solid tomato;
+    padding: 0;
 }
-.b{
-	padding-left: 20px;
-	display: flex;
-	align-items: center;
-	color: #FFFFFF;
-	height: 40px;
-	width:40%;
-	background-color:#EA513E;
-   border-radius: 20px;
+.subscriber-btn{
+    box-shadow: 0px 0px 2px 2px rgb(228 84 52 / 30%);
+    padding-left: 5px;
+    width: 45%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: tomato;
+    color: white;
+    border: 0;
+    padding: 0;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0px 10px;
+    cursor: pointer;
+
+}
+.subscriber-btn:hover{
+
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
+
 }
 
 /* ------------ */
@@ -267,14 +303,22 @@ footer{
     padding-top: 10px;
 }
 .top{
+    cursor: pointer;
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right: 5px;
     background-color:tomato ;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     padding: 20px;
     color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow:  1px 1px 13px 0px rgba(50, 50, 50, 0.76);
+}
+.top:hover{
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
 }
 .top-icon{
     color: white;
@@ -289,5 +333,10 @@ footer{
     background-color: tomato;
     color: #FFFFFF;
     padding: 10px;
+    cursor: pointer;
     
+}
+.social-img:hover{
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
 }

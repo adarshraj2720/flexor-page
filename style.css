@@ -65,26 +65,44 @@ body{
     align-items: center;
 }
 .padding{
-    padding: 20px 50px;
+    padding: 20px 60px;
 }
 .padding-with-BC{
-    padding: 50px;
+    padding: 50px 60px;
 }
 
-.greater-img1{
-    color: #FFFFFF;
-    font-size: 10px;
-}
+
 /* --------header------- */
 .drop-down-hover{
+    width: 100px;
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 10px;
     box-shadow:         1px 1px 13px 0px rgba(50, 50, 50, 0.76);
     position: absolute;
     top:0;
-   right: 100px;
+   right: 200px;
    margin-top: 20px;
+   border-radius: 10px;
+}
+.deep-down{
+    width: 100px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    box-shadow:         1px 1px 13px 0px rgba(50, 50, 50, 0.76);
+    position: absolute;
+    top:0;
+   left: 115px;
+   margin-top: 20px;
+   border-radius: 10px;
+   display: none;
+}
+.deep-down-hover:hover .deep-down{
+    display: inline-block;
+}
+.deep-down li:hover {
+    color: tomato;
 }
 .drop-down-icon{
     margin-left: 5px;
@@ -93,14 +111,19 @@ body{
     display: none;
 }
 .drop-down-hover li{
-    font-size: 18px;
-    padding: 5px;
+    font-size: 14px;
+    padding: 10px 0px;
 }
 .drop-down-hover li:hover{
     color: tomato;
 }
 .drop-down:hover .drop-down-hover{
     display: inline-block;
+}
+.arrow-img-drop{
+    color: black;
+    font-size: 10px;
+    margin-left: 5px;
 }
 .fixed{
 position: fixed;
@@ -112,8 +135,9 @@ width:100%;
 color: white;
 }
 nav{
-    padding-right: 100px;
+    padding-right: 160px;
     position: relative;
+    cursor: pointer;
 }
 h1{
     font-size: 1.8rem;
@@ -152,6 +176,7 @@ option{
     position: absolute;
     top: 25%;
     left: 50px;
+    padding-left: 50px;
 }
 h2{
     color: #FFFFFF;
@@ -165,20 +190,28 @@ h2{
     padding-bottom: 50px;
 }
 .arrow-circle{
-width: 20%;
-height: 34px;
-background-color: silver;
-border-radius: 12px;
+width: 22%;
+height: 35px;
+background-color: rgb(88,75,72);
+border-radius:20px;
 display: flex;
 align-items: center;
+ cursor: pointer;
 
+}
+.arrow-circle:hover{
+    background-color: tomato;
+}
+.arrow-img{
+    color: white;
+    font-size: 20px;
 }
 .h-btn{
     position: relative;
-bottom:  0px;
-right: 10px;
+    bottom:  0px;
+    right: 10px;
     height:50px;
-  width: 30%;
+  width:30%;
   background-color: tomato;
   border-radius: 50%;
   display: flex;
@@ -198,11 +231,19 @@ bottom: 100px;
  align-items: inherit;
 }
 .col_1{
-    width: 24%;
+    width: 28%;
     height: auto;
     background-color: tomato;
     padding: 20px 30px;
     margin-right: 40px;
+}
+.greater-img1{
+    color: #FFFFFF;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.more:hover .greater-img1{
+    color: tomato;
 }
 h3{
     font-size: 36px;
@@ -223,19 +264,21 @@ h3{
     padding: 10px 25px;
     border-radius: 20px;
     font-size: 14px;
+    cursor: pointer;
 }
 .more:hover{
     color: tomato;
     background-color: #FFFFFF; 
+    box-shadow:   0px 0px 12px 1px rgb(0 0 0 / 40%);
 }
 .col_2{
     margin-top: 25px;
     padding: 25px  20px 10px 20px;
     border-radius: 10px;
-    width: 16%;
-    height:300px;
+    width: 20%;
+    height:320px;
     flex-wrap: wrap;
-    box-shadow:  0px 4px 5px 0px #C6BCAB;
+    box-shadow:   0px 0px 12px 1px rgb(0 0 0 / 40%);
     margin-right: 40px;
     text-align: center;
     background-color: #FFFFFF;
@@ -295,6 +338,7 @@ iframe{
     background-color: tomato;
     color: white;
     border: 0;
+    padding: 12px;
 }
 .fingerprint-head{
     padding-bottom: 20px;
@@ -306,10 +350,17 @@ iframe{
     line-height: 1.5;
 }
 /* --------brand----------------- */
-.brand-col{
-
+.brand-img-col{
     width: 100%;
-    height: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.brand-col{
+   
+    width: 100%;
+    height: 250px;
     overflow-x:scroll;
 
 }
@@ -319,6 +370,16 @@ iframe{
 .brand-img{
     width: 100%;
     height: 100%;
+}
+.dot-col{
+    display: flex;
+   
+    justify-content: center;
+}
+.brand-box{
+    padding: 10px 0px;
+    display: inline-block;
+    
 }
 /* ---------services----------- */
 .services{
@@ -341,7 +402,7 @@ h6{
     margin-top: 50px;
 }
 .services-col{
-    padding: 20px;
+    padding: 0px 20px 40px 20px;
     text-align: center;
     width: 26%;
     height: 150px;
@@ -350,21 +411,22 @@ h6{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow:  0px 0px 12px 1px rgb(0 0 0 / 40%);
 }
 .service-img-block{
     position: relative;
-    bottom: 40px;
+    bottom: 20px;
 }
 .service-img{
     color: #FFFFFF;
-    padding: 20px;
+    padding: 22px;
     background-color: tomato;
     border-radius: 50%;
 }
 .services-col-head{
     font-size: 18px;
     font-weight: 700;
-    /* padding-bottom: 20px; */
+    /* padding-bottom: 0px; */
 }
 .services-col-head-about{
     font-size: 14px;
@@ -375,6 +437,7 @@ h6{
     background-color: #FFFFFF;
     color: tomato;
     border: 2px solid tomato;
+    padding: 20px;
 }
 
 /* --------------image-block------------ */
@@ -385,6 +448,9 @@ h6{
 .four-img-block:hover .four-img-head-block{
     background-color: tomato;
     color: #FFFFFF;
+}
+.four-img-block:hover .arrow-img-more{
+    color: white;
 }
 .four-img-head-block{
     position: absolute;
@@ -405,13 +471,13 @@ h6{
     padding: 20px 0px;
     line-height: 1.5;
 }
-.arrow-img{
-    color: green;
-    font-size: 10px;
-}
+
 .read-more-arrow{
     font-size: 12px;
     margin-left: 10px;
+}
+.arrow-img-more{
+    color: black;
 }
 .img1{
     border-radius: 10px;
@@ -484,19 +550,21 @@ blockquote{
     margin-top: 30px;
 }
 .all{
-   margin-right:20px ; 
+  padding: 20px ; 
+  margin-left: 20px;
+  cursor: pointer;
 }
 .all:hover{
     border-radius: 20px;
-    padding: 10px 15px;
-    color: #FFFFFF;
-    background-color: tomato;
+    padding: 10px 20px;
+    color: tomato;
+    background-color: rgb(255, 220, 204);;
 }
 .all-click{
     border-radius: 20px;
-    padding: 10px 15px;
-    color: #FFFFFF;
-    background-color: tomato;
+    padding: 10px 20px;
+    color: tomato;
+    background-color: rgb(255, 220, 204);;
 }
 .portfolio-block{
     padding-top: 30px;
@@ -584,7 +652,7 @@ blockquote{
     text-align: center;
     padding: 20px 0px;
     background-color: #FFFFFF;
-    box-shadow:  0px 4px 5px 0px #C6BCAB;
+    box-shadow:   0px 0px 4px 4px rgb(0 0 0 / 30%);
 }
 .team-name{
     font-size: 24px;
@@ -608,7 +676,7 @@ blockquote{
 }
 .subject-block{
     height: 70px;
-    background-color: silver;
+    background-color: rgb(248,248,248);
     color: #FFFFFF;
 }
 .subject{
@@ -659,6 +727,7 @@ blockquote{
     border-radius: 5px;
     font-weight: 700;
     font-size: 14px;
+    cursor: pointer;
 }
 .buy-btn:hover{
     background-color: rgb(245, 129, 109);
@@ -681,20 +750,29 @@ blockquote{
     color: tomato;
     font-weight: 700;
 }
+.ques,.question-1,.down,.up-img{
+cursor: pointer;
+}
 .ques{
     font-weight: 700;
 }
 .ans{
     padding-top: 10px;
 }
+.ques:hover{
+    color: tomato;
+}
 
 /* -----------conatct----------- */
 .contact-block{
-    width: auto;
+    width: 20%;
     background-color: #FFFFFF;
-    box-shadow:  0px 4px 4px 0px #C6BCAB;
-    margin-right: 20px;
+    box-shadow:  0px 0px 4px 4px rgb(0 0 0 / 30%);
+    
     padding: 20px;
+}
+.contact-margin{
+    margin: 0px 8px;
 }
 
 .contact-img{
@@ -722,8 +800,8 @@ blockquote{
 }
 form{
     padding: 30px;
-    width:50%;
-    box-shadow:  0px 4px 4px 0px #C6BCAB;
+    width:65%;
+    box-shadow:  0px 0px 4px 4px rgb(0 0 0 / 30%);
     margin:  0 auto;
 }
 .your-name{
@@ -763,18 +841,23 @@ textarea{
     font-size: inherit;
     color: #FFFFFF;
     padding: 10px 20px;
+    cursor: pointer;
 }
 .send-msg-btn:hover{
-    
+
+        background-color: rgb(245, 129, 109);
+        color: #FFFFFF;
+
 }
+
+
+/* ------------------- */
 .width-20{
     width:50%;
 }
 .about-subscribe{
 padding: 25px 0px;
 }
-
-/* ------------------- */
 .greater-img{
     color: tomato;
     font-size: 10px;
@@ -808,28 +891,39 @@ address{
     font-size: 14px;
 }
 .subscribe{
-    width: 90%;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
     display: flex;
     flex-direction: row-reverse;
-}
-.a{
-    
-    height:40px;
-    width: 100%;
     background-color: white;
-    margin-bottom: 10px;
-   border-radius: 20px;
+   border: 1px solid tomato;
+    padding: 0;
 }
-.b{
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+.subscriber-btn{
+    box-shadow: 0px 0px 2px 2px rgb(228 84 52 / 30%);
+    padding-left: 5px;
+    width: 45%;
     height: 40px;
-    width:40%;
-    background-color:#EA513E;
-   border-radius: 20px;
+    border-radius: 30px;
+    background-color: tomato;
+    color: white;
+    border: 0;
+    padding: 0;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0px 10px;
+    cursor: pointer;
+
 }
+.subscriber-btn:hover{
+
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
+
+}
+
 
 /* ------------ */
 footer{
@@ -845,7 +939,7 @@ footer{
 .top{
     position: fixed;
     bottom: 20px;
-    right: 0px;
+    right: 5px;
     background-color:tomato ;
     height: 10px;
     width: 10px;
@@ -853,6 +947,12 @@ footer{
     color: white;
     display: flex;
     justify-content: center;
+    box-shadow:  1px 1px 13px 0px rgba(50, 50, 50, 0.76);
+    cursor: pointer;
+}
+.top:hover{
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
 }
 .top-icon{
     color: white;
@@ -867,13 +967,20 @@ footer{
     background-color: tomato;
     color: #FFFFFF;
     padding: 10px;
+    cursor: pointer;
     
 }
+.social-img:hover{
+    background-color: rgb(245, 129, 109);
+    color: #FFFFFF;
+}
+
+/* ------------------------- */
 #toggle, .bars{
     display: none;
 } 
 .toggle-btn{
-    color: black;
+    color: tomato;
 }
 
 
@@ -911,8 +1018,8 @@ footer{
     }
     .drop-down-hover{
         position: absolute;
-        top:440px;
-       right: 310px;
+        top:445px;
+       right: 400px;
        margin-top: 20px;
     }
 
